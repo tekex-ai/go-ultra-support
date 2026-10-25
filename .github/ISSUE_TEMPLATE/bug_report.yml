@@ -1,0 +1,49 @@
+name: Bug report
+description: Something on the watch face isn't working right
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for helping! This report is **public**, so leave out anything personal."
+  - type: dropdown
+    id: edition
+    attributes:
+      label: Which app?
+      options: ["Go Ultra! (full)", "Go Ultra! Lite"]
+    validations:
+      required: true
+  - type: input
+    id: watch
+    attributes:
+      label: Watch model
+      placeholder: "e.g. fēnix 8 47mm, Forerunner 970, Venu 2"
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: App version and watch software version
+      description: "App version: Connect IQ phone app → My Device → Go Ultra!. Watch software: Settings → System → About on the watch."
+      placeholder: "e.g. app 1.0.0, watch 21.18"
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you see, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can we see it too?
+      placeholder: "1. Set Difficulty to Hard\n2. Save a 5K run\n3. ..."
+  - type: textarea
+    id: settings
+    attributes:
+      label: Your face settings
+      description: Character, difficulty, number of fields and which ones, units (mi/km), 12/24 h.
+  - type: textarea
+    id: photo
+    attributes:
+      label: Photo or screenshot
+      description: Drag in a photo of the watch if it helps.

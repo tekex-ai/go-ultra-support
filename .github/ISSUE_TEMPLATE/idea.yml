@@ -1,0 +1,19 @@
+name: Idea or feature request
+description: Suggest something new for Go Ultra!
+labels: ["idea"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What would you like the face to do?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would it help?
+  - type: input
+    id: watch
+    attributes:
+      label: Your watch model (optional)
