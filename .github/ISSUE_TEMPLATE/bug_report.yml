@@ -46,4 +46,4 @@ body:
     id: photo
     attributes:
       label: Photo or screenshot
-      description: Drag in a photo of the watch if it helps.
+      description: Drag in a photo of the watch if it helps. Issues are public, so crop out or cover personal values (heart rate, Body Battery, steps, location, time zone).
